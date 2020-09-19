@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Infraestrutura/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infraestrutura.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infraestrutura.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Infraestrutura/1.0.0": {
+      "type": "project",
+      "path": "../GerenciadorHeroes/Infraestrutura.csproj",
+      "msbuildProject": "../GerenciadorHeroes/Infraestrutura.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Infraestrutura >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Vinicius Walsh\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Vinicius Walsh\\Documents\\Dotnet\\Desenvolvimento com C#\\CSharp-TP3-ViniciusWalsh\\GerenciadorHeroes\\ConsoleApp\\ConsoleApp.csproj",
+      "projectName": "ConsoleApp",
+      "projectPath": "C:\\Users\\Vinicius Walsh\\Documents\\Dotnet\\Desenvolvimento com C#\\CSharp-TP3-ViniciusWalsh\\GerenciadorHeroes\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\Vinicius Walsh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vinicius Walsh\\Documents\\Dotnet\\Desenvolvimento com C#\\CSharp-TP3-ViniciusWalsh\\GerenciadorHeroes\\ConsoleApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Vinicius Walsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Vinicius Walsh\\Documents\\Dotnet\\Desenvolvimento com C#\\CSharp-TP3-ViniciusWalsh\\GerenciadorHeroes\\GerenciadorHeroes\\Infraestrutura.csproj": {
+              "projectPath": "C:\\Users\\Vinicius Walsh\\Documents\\Dotnet\\Desenvolvimento com C#\\CSharp-TP3-ViniciusWalsh\\GerenciadorHeroes\\GerenciadorHeroes\\Infraestrutura.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
